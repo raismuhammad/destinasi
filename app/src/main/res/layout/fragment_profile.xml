@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.ProfileFragment"
+    android:orientation="vertical"
+    android:background="@color/background_page">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:background="@color/light_blue"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile_imagee"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_account_circle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ic_verified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_verified_user"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btn_profile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Biodata"
+            android:textColor="@color/black"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/btn_email_verification"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Verifikasi Email"
+            android:textColor="@color/black"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/btn_change_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Ubah Password"
+            android:textColor="@color/black"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/btn_change_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Ubah Email"
+            android:textColor="@color/black"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:background="@color/white" />
+
+
+        <TextView
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Logout"
+            android:textColor="@color/red"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:background="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "539075492896",
+    "firebase_url": "https://destinasi-92554-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "destinasi-92554",
+    "storage_bucket": "destinasi-92554.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539075492896:android:1294d775d949d37f3f9045",
+        "android_client_info": {
+          "package_name": "com.raisproject.destinasi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539075492896-egre7qrfl8o5j98gusvmkr2kf3mu1tn8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxSQ028F0nbh3lfSsc3h423ZRLIoD2K5U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539075492896-egre7qrfl8o5j98gusvmkr2kf3mu1tn8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
