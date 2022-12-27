@@ -67,9 +67,13 @@ class DetailPageActivity : AppCompatActivity() {
                             binding.tvDestinationDescription.setText(description.toString())
                             binding.btnSendWhatsappMessage.setOnClickListener {
                                 val mobile = phoneNumber
-                                val message = "Permisi, apakah saya bisa bertanya tentang ${destinationName}?"
-                                startActivity(Intent(Intent.ACTION_VIEW,
-                                    Uri.parse("https://api.whatsapp.com/send?phone=" + mobile + "&text=" + message)))
+                                if (mobile != null) {
+                                    val message = "Permisi, apakah saya bisa bertanya tentang ${destinationName}?"
+                                    startActivity(Intent(Intent.ACTION_VIEW,
+                                        Uri.parse("https://api.whatsapp.com/send?phone=" + mobile + "&text=" + message)))
+                                } else {
+                                    Toast.makeText(this@DetailPageActivity, "Nomor pengelola tidak tersedia", Toast.LENGTH_SHORT).show()
+                                }
                             }
 
                         }

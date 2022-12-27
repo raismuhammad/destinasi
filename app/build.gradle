@@ -84,8 +84,12 @@ dependencies {
     // circle profile
     implementation 'de.hdodenhof:circleimageview:2.1.0'
 
+    // image
     implementation 'com.squareup.picasso:picasso:2.71828'
 
     // Add the dependency for the Realtime Database library
     implementation 'com.google.firebase:firebase-database-ktx'
+
+    // location
+    implementation 'com.google.android.gms:play-services-location:19.0.1'
 }
