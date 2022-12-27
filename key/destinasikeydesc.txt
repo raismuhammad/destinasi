@@ -1,0 +1,11 @@
+name file: destinasi.jks
+keystore password: destinasi123
+key password: destinasi123
+alias: key0
+certificate
+first and last name: muhammad rais
+organizational unit: raisproject
+organization: raisproject
+city or locality: bogor
+state or province: jawa barat
+country code: 62
