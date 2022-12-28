@@ -36,8 +36,7 @@ class LoginActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         binding.tvForgotPassword.setOnClickListener {
-            val intent = Intent(this@LoginActivity, SecretMenuActivity::class.java)
-            startActivity(intent)
+            // do nothing
         }
 
         binding.btnRegister.setOnClickListener {
