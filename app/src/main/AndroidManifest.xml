@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Destinasi"
         tools:targetApi="31">
         <activity
+            android:name=".ui.forgotpassword.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.detailpage.DetailPageActivity"
             android:exported="false" />
         <activity

@@ -16,6 +16,7 @@ import com.google.firebase.database.ValueEventListener
 import com.raisproject.destinasi.MainActivity
 import com.raisproject.destinasi.R
 import com.raisproject.destinasi.databinding.ActivityLoginBinding
+import com.raisproject.destinasi.ui.forgotpassword.ForgotPasswordActivity
 import com.raisproject.destinasi.ui.registeruser.RegisterActivity
 import com.raisproject.destinasi.ui.secretmenu.SecretMenuActivity
 
@@ -36,7 +37,7 @@ class LoginActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         binding.tvForgotPassword.setOnClickListener {
-            // do nothing
+            startActivity(Intent(this, ForgotPasswordActivity::class.java))
         }
 
         binding.btnRegister.setOnClickListener {
